@@ -1,0 +1,13 @@
+env:
+  es6: true
+  serviceworker: true
+  worker: true
+extends:
+  - tuxsnct
+  - tuxsnct/react
+  - tuxsnct/typescript
+rules:
+  newline-per-chained-call: 0
+  import/no-unresolved: [2, {ignore: ['hono\/.*$']}]
+parserOptions:
+  project: ./tsconfig.json
